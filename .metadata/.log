@@ -156,3 +156,285 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 15:16:36.631
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 16:35:25.022
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 16:35:25.028
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 16:35:25.035
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 16:35:25.048
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 16:35:25.053
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 16:35:33.706
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 16:35:33.712
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 16:35:33.716
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2016-11-24 16:35:36.596
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2016-11-24 16:35:36.596
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY org.eclipse.wst.server.core 4 0 2016-11-24 16:37:03.067
+!MESSAGE Server Google App Engine at localhost failed to start.
+
+!ENTRY org.eclipse.wst.server.discovery 1 0 2016-11-24 16:37:20.717
+!MESSAGE already installed: org.eclipse.jst.server.generic.jonas4
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 16:38:39.011
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 16:38:39.019
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 16:38:39.022
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:35:20.952
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:35:20.957
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:35:20.960
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-11-24 17:39:05.293
+!MESSAGE No valid Android XML Editor Delegate found for file /Railway/src/main/webapp/WEB-INF/web.xml [Res null, type null]
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-11-24 17:39:12.448
+!MESSAGE No valid Android XML Editor Delegate found for file /MyShopping/src/main/webapp/WEB-INF/web.xml [Res null, type null]
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:40:22.540
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:40:22.543
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:40:22.548
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-11-24 17:40:22.615
+!MESSAGE No projects found for [C:\Users\rapa0716\Gittest\Railway-ticketing-system\Railway\src\main\webapp\WEB-INF\web.xml]
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:40:50.074
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:40:50.079
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:40:50.083
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-11-24 17:40:56.936
+!MESSAGE No valid Android XML Editor Delegate found for file /Railway/src/main/webapp/WEB-INF/spring-servlet.xml [Res null, type null]
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:41:40.719
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:41:40.722
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:41:40.725
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.android.ide.eclipse.adt 2 0 2016-11-24 17:41:48.555
+!MESSAGE No projects found for [C:\Users\rapa0716\Gittest\Railway-ticketing-system\Railway\src\main\webapp\WEB-INF\spring-servlet.xml]
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:41:48.701
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:41:48.705
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:41:48.710
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:42:22.265
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:42:22.270
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:42:22.273
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.android.ide.eclipse.adt 1 0 2016-11-24 17:44:05.491
+!MESSAGE No valid Android XML Editor Delegate found for file /Railway/src/main/webapp/WEB-INF/spring-servlet.xml [Res null, type null]
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:46:04.018
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:46:04.021
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:46:04.024
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:46:42.703
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:46:42.707
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:46:42.713
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:47:11.612
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:47:11.616
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:47:11.619
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:47:44.726
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:47:44.729
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:47:44.733
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:48:48.205
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:48:48.208
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:48:48.210
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:49:25.393
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:49:25.396
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:49:25.398
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:49:58.623
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:49:58.625
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:49:58.627
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-24 17:53:07.734
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-24 17:53:07.734
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:54:08.466
+!MESSAGE The POM for org.jboss.logging:jboss-logging:jar:3.2.1.Final is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:54:08.537
+!MESSAGE The POM for org.jboss.logging:jboss-logging:jar:3.2.1.Final is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:54:08.642
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:54:08.646
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:54:08.649
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:54:08.670
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:54:08.675
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:58:27.884
+!MESSAGE The POM for org.jboss.logging:jboss-logging:jar:3.2.1.Final is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:58:28.004
+!MESSAGE The POM for org.jboss.logging:jboss-logging:jar:3.2.1.Final is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:58:28.066
+!MESSAGE The POM for org.jboss.logging:jboss-logging:jar:3.2.1.Final is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 17:58:28.157
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:58:28.160
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:58:28.163
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:58:28.168
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 17:58:28.173
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 18:01:03.926
+!MESSAGE The POM for org.jboss.logging:jboss-logging:jar:3.2.1.Final is invalid, transitive dependencies (if any) will not be available, enable debug logging for more details
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 18:01:03.953
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 18:01:03.957
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 18:01:03.961
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 18:01:03.969
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 18:01:03.971
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 18:01:03.974
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-24 18:02:39.195
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-24 18:02:39.195
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-24 18:02:39.253
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2016-11-24 18:02:39.253
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 18:02:39.903
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 18:02:39.907
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 18:02:39.910
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY com.google.appengine.eclipse.wtp.maven 1 0 2016-11-24 18:04:04.773
+!MESSAGE GaeProjectConfigurator.getBuildParticipant invoked
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 18:04:04.781
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2016-11-24 18:04:04.786
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
