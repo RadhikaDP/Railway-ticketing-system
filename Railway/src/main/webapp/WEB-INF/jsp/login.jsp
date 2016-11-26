@@ -9,6 +9,13 @@
 <head><%@ page isELIgnored="false" %>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>login </title>
+<title>Insert title here</title>
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/style.css" />
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/bootstrap.min.css" />
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/font-awesome.css" />
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/dropdownmenue.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
  <div align="center">
  <h2 > LOGIN</h2>

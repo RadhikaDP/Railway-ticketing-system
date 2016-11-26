@@ -9,19 +9,41 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<title>Insert title here</title>
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/style.css" />
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/bootstrap.min.css" />
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/font-awesome.css" />
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/dropdownmenue.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style type="text/css">
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: #f5f5f5}
+</style>
 </head>
 <body>
+   <div align="center">
+ <div class="container">
+  <div class="panel panel-default"> 
 <table >  
-<tr><th class="col-xs-2">Train No</th><th class="col-xs-2">Train Name</th><th class="col-xs-2">Source</th><th class="col-xs-2">Departure</th><th class="col-xs-2">Destination</th><th class="col-xs-2">Arrival</th></tr>  
-   <c:forEach var="cust" items="${train}">   
+<tr><th class="col-xs-1">Train No</th><th class="col-xs-1">Train Name</th><th class="col-xs-1">Source</th><th class="col-xs-1">Departure</th><th class="col-xs-1">Destination</th><th class="col-xs-1">Arrival</th></tr>  
+   <c:forEach var="train" items="${train}">   
    <tr>  
-   <td class="col-xs-2">${train.trainno}</td>  
-   <td class="col-xs-2">${train.trainname}</td>  
-   <td class="col-xs-2">${train.source}</td>  
-   <td class="col-xs-2">${train.departure}</td>
-   <td class="col-xs-2">${train.destination}</td>
+   <td class="col-xs-1">${train.trainno}</td>  
+   <td class="col-xs-1">${train.trainname}</td>  
+   <td class="col-xs-1">${train.source}</td>  
+   <td class="col-xs-1">${train.departure}</td>
+   <td class="col-xs-1">${train.destination}</td>
+      <td class="col-xs-1">${train.arrival}</td>
    </tr>  
    </c:forEach>  
-   </table> 
+   </table> </div></div></div>
 </body>
 </html>

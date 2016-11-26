@@ -43,10 +43,12 @@ public class TrainsDaoImpl implements TrainsDao{
 	@Override
 	public List<Trains> retriveTrains(String source,String destination) {
 
-		   return temp.query(Quries.TRAINS_BW_STATIONS,new RowMapper<Trains>(){  
+		   return temp.query(Quries.TRAINS_BW_STATIONS,new Object[] {source,destination},new RowMapper<Trains>(){  
 		        public Trains mapRow(ResultSet rs, int row) throws SQLException {  
 		        	Trains e=new Trains();  
+		        	System.out.println(rs.getString(1));
 		            e.setTrainno(rs.getString(1));  
+		            e.setSeats(rs.getString(3));
 		            e.setTrainname(rs.getString(2)); 
 		            e.setSource(rs.getString(4));
 		            e.setDestination(rs.getString(5));

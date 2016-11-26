@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
 
 import org.apache.log4j.Logger;
@@ -41,10 +42,17 @@ public class TrainsController {
 	
 	@RequestMapping(value = "/viewtrains",method = RequestMethod.POST)
 	
-	  public ModelAndView viewtrains(HttpServletRequest request,HttpServletResponse response,@ModelAttribute("trains")Trains train) throws IOException{
-		ModelAndView model=new ModelAndView("viewtains");
+	  public ModelAndView viewtrains(HttpServletRequest request,HttpServletResponse response,@ModelAttribute("trains")Trains train,HttpSession session) throws IOException{
 		
 		List<Trains> trains = trainservice.retriveTrains(train.getSource(),train.getDestination());
+		String user=null;
+		user=(String) session.getAttribute("userid");
+		if(user==null){
+		ModelAndView model=new ModelAndView("viewtains");		
+		model.addObject("train",trains);
+		return model;
+		}
+		ModelAndView model=new ModelAndView("userviewtrains");		
 		model.addObject("train",trains);
 		return model;
 	}

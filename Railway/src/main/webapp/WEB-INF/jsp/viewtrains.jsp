@@ -9,8 +9,31 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/style.css" />
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/bootstrap.min.css" />
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/font-awesome.css" />
+<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/dropdownmenue.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+<style type="text/css">
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+}
+tr:hover {background-color: #f5f5f5}
+</style>
 </head>
-<body><form:form action="viewtrains" method="post" modelAttribute="trains"  >
+<body>
+   <div align="center">
+ <div class="container">
+
+  <div class="panel panel-default"> 
+
+<form:form action="viewtrains" method="post" modelAttribute="trains"  >
 <table >  
      <tr>                                    
         <td>  Source
@@ -28,5 +51,6 @@
          </tr> 
    </table> 
    </form:form>
+   </div></div></div>
 </body>
 </html>

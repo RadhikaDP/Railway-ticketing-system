@@ -53,12 +53,32 @@ public class LoginController {
 		    	return model;
 	    	 
 	    	}
+	
+			String role = loginService.getrole(login.getUserid());
 
 				boolean islogSuccesful = loginService.ValidateUser(login);
 					if(islogSuccesful){
 						logger.info("login successfull");
+				    	HttpSession session= request.getSession(true);
+						
+						session.setMaxInactiveInterval(600);
+						
+						session.setAttribute("userid", login.getUserid());		
+						
+						logger.info("userid is added as a session attribute");
+						session.setAttribute("role", role);
+						
+						logger.info("role is selected");
+
+						if(role.equals("user")){
 						ModelAndView model=new ModelAndView("redirect:home");	
 						return model;
+						}
+
+						if(role.equals("admin")){
+							ModelAndView model=new ModelAndView("redirect:admin");	
+							return model;
+						}
 					}
 					else{
 						logger.info("login failed");
@@ -67,5 +87,19 @@ public class LoginController {
 						return model;
 					}
 
+	    return null;
+			
+	 }
+	 
+	 @RequestMapping(value = "/home",method = RequestMethod.GET)
+
+	    public ModelAndView getuserhome(HttpServletRequest request,HttpServletResponse response,HttpSession session) throws IOException{
+	    			
+	    		ModelAndView model=new ModelAndView("home");
+
+    	
+	        	return model;
+	    				    	   
 	    }
+	 
 }
