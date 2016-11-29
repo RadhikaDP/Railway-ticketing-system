@@ -46,14 +46,14 @@ public class TrainsDaoImpl implements TrainsDao{
 		   return temp.query(Quries.TRAINS_BW_STATIONS,new Object[] {source,destination},new RowMapper<Trains>(){  
 		        public Trains mapRow(ResultSet rs, int row) throws SQLException {  
 		        	Trains e=new Trains();  
-		        	System.out.println(rs.getString(1));
 		            e.setTrainno(rs.getString(1));  
-		            e.setSeats(rs.getString(3));
+		            e.setSeats(rs.getInt(3));
 		            e.setTrainname(rs.getString(2)); 
 		            e.setSource(rs.getString(4));
 		            e.setDestination(rs.getString(5));
 		            e.setArrival(rs.getString(6));
 		            e.setDeparture(rs.getString(7));
+		            e.setCapacity(rs.getInt(16));
 		            return e;  
 		        }  
 		    });

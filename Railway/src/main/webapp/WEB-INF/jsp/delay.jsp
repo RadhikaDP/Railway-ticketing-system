@@ -14,39 +14,28 @@
 <link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/bootstrap.min.css" />
 <link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/font-awesome.css" />
 <link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/dropdownmenue.css" />
-            <link rel="stylesheet" href="css/clndr.css" type="text/css" />
-                                <script src="js/underscore-min.js" type="text/javascript"></script>
-                    <script src= "js/moment-2.2.1.js" type="text/javascript"></script>
-                    <script src="js/clndr.js" type="text/javascript"></script>
-                    <script src="js/site.js" type="text/javascript"></script>     
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
  <div align="center">
- <h2 > LOGIN</h2>
  <br></br>
-        <form:form action="login" method="post" modelAttribute="login"  >
+        <form:form action="delay" method="post" modelAttribute="delay"  >
             <table border="0">          
                 <tr>                   
-                    <td><form:input path="userid" name="uname" placeholder="User Name"  /></td>
-                    <td align="left"><form:errors path="userid" /></td>
+                    <td><form:input path="trainno"  placeholder="Train No"  /></td>
+                    <td align="left"><form:errors path="trainno" /></td>
                 </tr>
                 <tr>                 
-                    <td><form:password path="password" name="upass" placeholder="Password" /></td>
-                    <td align="left"><form:errors path="password"/></td>
-                </tr>        
-
-    
-        
+                    <td><form:input path="time"  placeholder="time" /></td>
+                    <td align="left"><form:errors path="time"/></td>
+                </tr>                      
                      <tr>
-                    <td colspan="2" align="center"><input type="submit" value="login" /></td>
+                    <td colspan="2" align="center"><input type="submit" value="SendNotification" /></td>
                 </tr>
-                
             </table>
-            <p>New here ?<a href="registration"> Sign up</a></p>
+
         </form:form>
     </div>
-    <p><a href="viewtrains">view trains </a></p>
 </body>
 </html>

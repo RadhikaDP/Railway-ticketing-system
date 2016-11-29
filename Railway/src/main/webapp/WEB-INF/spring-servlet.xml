@@ -33,8 +33,15 @@
 	
 	<bean id="trainservice" class="com.railway.service.impl.TrainsServiceImpl" />
 	<bean id="trainsdao" class="com.railway.dao.impl.TrainsDaoImpl" />
-		<bean id="bookingservice" class="com.railway.service.impl.BookingServiceImpl" />
+	
+	<bean id="bookingservice" class="com.railway.service.impl.BookingServiceImpl" />
 	<bean id="bookdao" class="com.railway.dao.impl.BookingDaoImpl" />
+	
+	<bean id="notService" class="com.railway.service.impl.NotificationServiceImpl" />
+	<bean id="notdao" class="com.railway.dao.impl.NotificationDaoImpl" />
+	
+	<bean id="reportService" class="com.railway.service.impl.ReportServiceImpl" />
+	<bean id="reportdao" class="com.railway.dao.impl.ReportDaoImpl" />
 	
 	<bean id="temp" class="org.springframework.jdbc.core.JdbcTemplate">  
 	<property name="dataSource" ref="dataSource"></property>  

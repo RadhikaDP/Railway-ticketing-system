@@ -23,30 +23,33 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
- <div align="center">
- <h2 > LOGIN</h2>
- <br></br>
-        <form:form action="login" method="post" modelAttribute="login"  >
+<p>All trains travelling between two stations on particular 1 day in a week</p>
+<form:form action="1" method="post" modelAttribute="train"  >
             <table border="0">          
-                <tr>                   
-                    <td><form:input path="userid" name="uname" placeholder="User Name"  /></td>
-                    <td align="left"><form:errors path="userid" /></td>
-                </tr>
-                <tr>                 
-                    <td><form:password path="password" name="upass" placeholder="Password" /></td>
-                    <td align="left"><form:errors path="password"/></td>
-                </tr>        
-
-    
-        
-                     <tr>
-                    <td colspan="2" align="center"><input type="submit" value="login" /></td>
+                <tr>                                    
+        <td>  Source
+          <form:select path="source" name="source" id="source" items="${source}"  >        
+          </form:select></td>
+          </tr>
+               <tr>    
+          <td>  Destination
+          <form:select path="destination" name="destination" id="destination" items="${destination}"  >
+          
+          </form:select></td>
+          </tr>     
+                <form:select name="day"  path="day">
+				<option value="MON">Mon</option>
+				<option value="Tue">Tue</option>
+				<option value="Wed">Wed</option>
+				<option value="Thu">Thu</option>
+				<option value="Fri">Fri</option>
+				<option value="Sat">Sat</option>
+</form:select>
+   			   <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Get Details" /></td>
                 </tr>
                 
             </table>
-            <p>New here ?<a href="registration"> Sign up</a></p>
         </form:form>
-    </div>
-    <p><a href="viewtrains">view trains </a></p>
 </body>
 </html>

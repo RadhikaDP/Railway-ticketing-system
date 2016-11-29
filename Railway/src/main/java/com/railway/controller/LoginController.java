@@ -101,5 +101,25 @@ public class LoginController {
 	        	return model;
 	    				    	   
 	    }
+	    @RequestMapping(value = "/logout",method = RequestMethod.GET)
+
+	    public ModelAndView LogoutProcess(HttpServletRequest req,HttpServletResponse res){
+	    	
+	    	HttpSession session  = req.getSession();
+	    	  session.removeAttribute("userid");
+	    	  session.removeAttribute("role");
+	    	  session.invalidate();  
+	    	  return new ModelAndView("redirect:login");  
+	    }
 	 
+		 @RequestMapping(value = "/admin",method = RequestMethod.GET)
+
+		    public ModelAndView getadminhome(HttpServletRequest request,HttpServletResponse response,HttpSession session) throws IOException{
+		    			
+		    		ModelAndView model=new ModelAndView("adminhome");
+
+	    	
+		        	return model;
+		    				    	   
+		    }
 }

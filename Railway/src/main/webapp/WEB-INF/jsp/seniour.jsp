@@ -23,30 +23,18 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
- <div align="center">
- <h2 > LOGIN</h2>
- <br></br>
-        <form:form action="login" method="post" modelAttribute="login"  >
+<p>All senior citizens travelling on a particular train (Women > 60 years, Men > 65 years)</p>
+<form:form action="seniour" method="post" modelAttribute="train"  >
             <table border="0">          
                 <tr>                   
-                    <td><form:input path="userid" name="uname" placeholder="User Name"  /></td>
-                    <td align="left"><form:errors path="userid" /></td>
-                </tr>
-                <tr>                 
-                    <td><form:password path="password" name="upass" placeholder="Password" /></td>
-                    <td align="left"><form:errors path="password"/></td>
-                </tr>        
-
-    
-        
-                     <tr>
-                    <td colspan="2" align="center"><input type="submit" value="login" /></td>
+                    <td><form:input path="trainno" name="trainno" placeholder="Train no"  /></td>
+                    <td align="left"><form:errors path="trainno" /></td>
+                </tr>      
+      <tr>
+                    <td colspan="2" align="center"><input type="submit" value="Get Details" /></td>
                 </tr>
                 
             </table>
-            <p>New here ?<a href="registration"> Sign up</a></p>
         </form:form>
-    </div>
-    <p><a href="viewtrains">view trains </a></p>
 </body>
 </html>

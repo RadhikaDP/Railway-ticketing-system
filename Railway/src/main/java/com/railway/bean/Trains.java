@@ -4,11 +4,20 @@ public class Trains {
 
 	private String trainno;
 	private String trainname;
-	private String seats;
+	private int seats;
 	private String source;
 	private String destination;
 	private String arrival;
 	private String departure;
+	private int capacity;
+	private String day;
+	
+	public int getCapacity() {
+		return capacity;
+	}
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
 	public String getTrainno() {
 		return trainno;
 	}
@@ -21,10 +30,11 @@ public class Trains {
 	public void setTrainname(String trainname) {
 		this.trainname = trainname;
 	}
-	public String getSeats() {
+
+	public int getSeats() {
 		return seats;
 	}
-	public void setSeats(String seats) {
+	public void setSeats(int seats) {
 		this.seats = seats;
 	}
 	public String getSource() {
@@ -50,6 +60,12 @@ public class Trains {
 	}
 	public void setDeparture(String departure) {
 		this.departure = departure;
+	}
+	public String getDay() {
+		return day;
+	}
+	public void setDay(String day) {
+		this.day = day;
 	}
 	
 	

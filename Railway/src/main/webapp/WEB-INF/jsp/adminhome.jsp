@@ -32,13 +32,30 @@ if(session.getAttribute("userid")==null){
  <div align="center">
 <div >
 			<ul class="dropdownMenu">
-				<li><a href="/MyShopping/home">Home</a></li>
-				<li><a href="/MyShopping/viewtrains">View Trains</a></li>                   
-     
-				<li><a href="#">My Account</a>
+               
+				<li><a href="#">Notifications</a>
 					<ul class="droprightMenu">
-						<li><a href="/MyShopping/viewbooking">Reservation</a></li>
-						<li><a href="/MyShopping/viewcancelation">Cancellation </a></li>						
+						<li><a href="/MyShopping/delay">Delay Notification</a></li>					
+					</ul></li>
+				<li><a href="#">Reports</a>
+					<ul class="droprightMenu">
+						<li><a href="/MyShopping/trainreport">Train Report</a>
+						
+						<ul class="droprightMenu">
+						  <li><a href="/MyShopping/1">1 day</a></li>
+						  </ul>
+						  
+						  </li>
+						  
+						<li><a href="#">Passenger Report </a>
+						<ul class="droprightMenu">
+						  <li><a href="/MyShopping/more10">10 times</a> </li>
+						   
+						   <li><a href="/MyShopping/seniour">senior citizens </a></li>
+						 
+						  </ul>
+						</li>		
+						<li><a href="/MyShopping/histReport">History Report </a></li>					
 					</ul></li>
 					<li><a href="/MyShopping/logout">Logout</a></li>
 				

@@ -29,7 +29,7 @@ public class TrainsController {
 	@RequestMapping(value = "/viewtrains",method = RequestMethod.GET)
     public ModelAndView trains(HttpServletRequest request,HttpServletResponse response,@Valid @ModelAttribute("trains")Trains train) throws IOException{
     			
-    		ModelAndView model=new ModelAndView("viewtrains");
+    		ModelAndView model=new ModelAndView("findtrains");
     		List<String> source = trainservice.getallsource();
     		List<String> destination = trainservice.getalldestination();
         	model.addObject("train",train);

@@ -1,15 +1,23 @@
 package com.railway.bean;
 
+import java.util.Date;
+
 public class Passenger {
 private String user;
 private String trainno;
-private int seatno;
 private String Name;
-private int Age;
+private String Age;
 private String gender;
 private String berth;
+private String Bookingid;
+private Date travelDate;
 
-
+public String getBookingid() {
+	return Bookingid;
+}
+public void setBookingid(String bookingid) {
+	Bookingid = bookingid;
+}
 public String getUser() {
 	return user;
 }
@@ -22,12 +30,7 @@ public String getTrainno() {
 public void setTrainno(String trainno) {
 	this.trainno = trainno;
 }
-public int getSeatno() {
-	return seatno;
-}
-public void setSeatno(int seatno) {
-	this.seatno = seatno;
-}
+
 public String getName() {
 	return Name;
 }
@@ -35,10 +38,10 @@ public void setName(String name) {
 	Name = name;
 }
 
-public int getAge() {
+public String getAge() {
 	return Age;
 }
-public void setAge(int age) {
+public void setAge(String age) {
 	Age = age;
 }
 public String getGender() {
@@ -52,6 +55,12 @@ public String getBerth() {
 }
 public void setBerth(String berth) {
 	this.berth = berth;
+}
+public Date getTravelDate() {
+	return travelDate;
+}
+public void setTravelDate(Date travelDate) {
+	this.travelDate = travelDate;
 }
 
 
