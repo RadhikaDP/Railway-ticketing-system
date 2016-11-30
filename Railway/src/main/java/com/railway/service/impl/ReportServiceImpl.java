@@ -20,8 +20,8 @@ public class ReportServiceImpl implements ReportService {
 	}
 
 	@Override
-	public List<Trains> getTrains1(String trno, String source,String destination) {
-		return reportdao.getTrains1(trno,source,destination);
+	public List<Trains> getTrains1(String day, String source,String destination) {
+		return reportdao.getTrains1(day,source,destination);
 	}
 
 	@Override
@@ -34,5 +34,11 @@ public class ReportServiceImpl implements ReportService {
 	public List<Passenger> getTrainHistory(String trno) {
 	
 		return reportdao.getTrainHistory(trno);
+	}
+
+	@Override
+	public List<Trains> getTrains2(String day1, String day2, String source, String destination) {
+		return reportdao.getTrains2(day1,day2,source,destination);
+
 	}
 }

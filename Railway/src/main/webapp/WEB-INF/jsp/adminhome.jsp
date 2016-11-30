@@ -43,6 +43,7 @@ if(session.getAttribute("userid")==null){
 						
 						<ul class="droprightMenu">
 						  <li><a href="/MyShopping/1">1 day</a></li>
+						  <li><a href="/MyShopping/2">2 day</a></li>
 						  </ul>
 						  
 						  </li>

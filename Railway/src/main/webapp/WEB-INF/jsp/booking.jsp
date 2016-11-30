@@ -9,14 +9,17 @@
 <html><jsp:include page="/WEB-INF/jsp/home.jsp"></jsp:include> 
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Book Ticket</title>
         <link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/style.css" />
         <link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
 <link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/font-awesome.css" />
 <link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/dropdownmenue.css" />
     </head>
     <body >
- 
+
 <center>    
   <table border="1" width="30%" height="30%">
   <tr><th><font color='#D18603'>S. No.</font></th>

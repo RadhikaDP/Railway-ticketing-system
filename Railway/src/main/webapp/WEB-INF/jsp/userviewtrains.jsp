@@ -56,7 +56,7 @@ tr:hover {background-color: #f5f5f5}
   	 double x=0.95*t;
    	double c= t-x;
    	if(s<=c){
-	   res="Fast filling";
+	   res="Almost 95% full";
    }
    	request.setAttribute("res",res);
    %>

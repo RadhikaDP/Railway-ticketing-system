@@ -10,6 +10,9 @@ public interface TrainsDao {
 
 	List<String> getallsource();
 	
-	List<Trains> retriveTrains(String source,String destination);
+	List<Trains> retriveTrains(String source,String destination, String week);
+
+	List<String> gettrainno(String week);
+
 
 }

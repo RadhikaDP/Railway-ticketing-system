@@ -24,7 +24,7 @@
 </head>
 <body>
 <p>All trains travelling between two stations on particular 1 day in a week</p>
-<form:form action="1" method="post" modelAttribute="days"  >
+<form:form action="2" method="post" modelAttribute="days"  >
             <table border="0">          
                 <tr>                                    
         <td>  Source
@@ -38,6 +38,15 @@
           </form:select></td>
           </tr>     
                 <form:select name="day" path="day1" >
+				<option value="MON">Mon</option>
+				<option value="Tue">Tue</option>
+				<option value="Wed">Wed</option>
+				<option value="Thu">Thu</option>
+				<option value="Fri">Fri</option>
+				<option value="Sat">Sat</option>
+</form:select>
+
+           <form:select name="day" path="day2" >
 				<option value="MON">Mon</option>
 				<option value="Tue">Tue</option>
 				<option value="Wed">Wed</option>

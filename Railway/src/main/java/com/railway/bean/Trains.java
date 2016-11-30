@@ -1,5 +1,7 @@
 package com.railway.bean;
 
+import java.util.Date;
+
 public class Trains {
 
 	private String trainno;
@@ -10,8 +12,22 @@ public class Trains {
 	private String arrival;
 	private String departure;
 	private int capacity;
-	private String day;
+	private float distance;
+	private Date date;
 	
+
+	public Date getDate() {
+		return date;
+	}
+
+	public void setDate(Date date) {
+		this.date = date;
+	}
+
+	public float getDistance() {
+		return distance;
+	}
+
 	public int getCapacity() {
 		return capacity;
 	}
@@ -61,12 +77,12 @@ public class Trains {
 	public void setDeparture(String departure) {
 		this.departure = departure;
 	}
-	public String getDay() {
-		return day;
+
+	public void setDistance(float float1) {
+		this.distance=float1;
+		
 	}
-	public void setDay(String day) {
-		this.day = day;
-	}
+
 	
 	
 }

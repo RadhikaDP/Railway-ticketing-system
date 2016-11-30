@@ -1,6 +1,7 @@
 package com.railway.controller;
 
 import java.io.IOException;
+import java.util.Iterator;
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -27,7 +28,7 @@ public class TrainsController {
 	TrainsService trainservice;
 	
 	@RequestMapping(value = "/viewtrains",method = RequestMethod.GET)
-    public ModelAndView trains(HttpServletRequest request,HttpServletResponse response,@Valid @ModelAttribute("trains")Trains train) throws IOException{
+    public ModelAndView trains(HttpServletRequest request,HttpServletResponse response,@Valid @ModelAttribute("trains")Trains train,HttpSession session) throws IOException{
     			
     		ModelAndView model=new ModelAndView("findtrains");
     		List<String> source = trainservice.getallsource();
@@ -42,13 +43,20 @@ public class TrainsController {
 	
 	@RequestMapping(value = "/viewtrains",method = RequestMethod.POST)
 	
-	  public ModelAndView viewtrains(HttpServletRequest request,HttpServletResponse response,@ModelAttribute("trains")Trains train,HttpSession session) throws IOException{
+	  public ModelAndView viewtrains(HttpServletRequest request,HttpServletResponse response,@Valid @ModelAttribute("trains")Trains train,HttpSession session) throws IOException{
 		
-		List<Trains> trains = trainservice.retriveTrains(train.getSource(),train.getDestination());
+
+
+		String s =train.getDate().toString();
+		String week = s.substring(0, 3);
+		
+		System.out.println(s+"date as string");
+		List<Trains> trains = trainservice.retriveTrains(train.getSource(),train.getDestination(), week);
 		String user=null;
+		session.setAttribute("date", s);
 		user=(String) session.getAttribute("userid");
 		if(user==null){
-		ModelAndView model=new ModelAndView("viewtains");		
+		ModelAndView model=new ModelAndView("viewtrains");		
 		model.addObject("train",trains);
 		return model;
 		}

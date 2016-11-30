@@ -1,6 +1,7 @@
 package com.railway.controller;
 
 import java.io.IOException;
+
 import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
@@ -19,7 +20,6 @@ import org.springframework.web.servlet.ModelAndView;
 import com.railway.bean.Passenger;
 import com.railway.bean.Trains;
 import com.railway.service.BookingService;
-import com.railway.service.TrainsService;
 
 @Controller
 public class BookingController {
@@ -39,7 +39,8 @@ public class BookingController {
     public ModelAndView insertpassenger(HttpServletRequest request,HttpServletResponse response,@ModelAttribute("passenger" ) Passenger pass,@PathVariable String trainno,HttpSession session) throws IOException{
 
 			String userid=(String)session.getAttribute("userid");
-			bookingservice.addpassengers(pass,userid,trainno);
+			String date = (String)session.getAttribute("date");
+			bookingservice.addpassengers(pass,userid,trainno,date);
     		ModelAndView model=new ModelAndView("bookconfirm");    
         	return model; 				    	   
     }
@@ -59,8 +60,8 @@ public class BookingController {
     public ModelAndView viewcancellation(HttpServletRequest request,HttpServletResponse response,HttpSession session) throws IOException{
     		
 			String userid=(String)session.getAttribute("userid");
-			List<Passenger> pass=bookingservice.getbookings(userid);
-    		ModelAndView model=new ModelAndView("viewcancelation");      	
+			List<Passenger> pass=bookingservice.getcancelations(userid);
+    		ModelAndView model=new ModelAndView("viewReservationHist");      	
     		model.addObject("pass",pass);
         	return model;
     				    	   
@@ -81,6 +82,16 @@ public class BookingController {
 			String userid=(String)session.getAttribute("userid");
 			bookingservice.cancelall(userid);
 			return new ModelAndView("redirect:/home");
+    				    	   
+    }
+	
+	@RequestMapping(value = "/viewresHist",method = RequestMethod.GET)
+    public ModelAndView viewPreviousHist(HttpServletRequest request,HttpServletResponse response,HttpSession session) throws IOException{
+		String userid=(String)session.getAttribute("userid");
+		List<Passenger> pass=bookingservice.getPreviousReservation(userid);
+    		ModelAndView model=new ModelAndView("viewReservationHist");      	
+    		model.addObject("pass",pass);
+        	return model;
     				    	   
     }
 }

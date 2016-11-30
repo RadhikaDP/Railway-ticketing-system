@@ -3,6 +3,7 @@ package com.railway.notification;
 
 import java.util.Properties;  
 
+
 import javax.mail.*;  
 import javax.mail.internet.*;
 
@@ -24,7 +25,7 @@ public class SendMail {
   Session session = Session.getDefaultInstance(props,  
    new javax.mail.Authenticator() {  
    protected PasswordAuthentication getPasswordAuthentication() {  
-   return new PasswordAuthentication("radhika.dp16@gmail.com","rechal20");//change accordingly  
+	   return new PasswordAuthentication("radhika.dp16@gmail.com","rechal120");//change accordingly  
    }  
   });  
    

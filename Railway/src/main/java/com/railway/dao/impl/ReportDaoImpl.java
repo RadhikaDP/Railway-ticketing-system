@@ -37,23 +37,21 @@ public class ReportDaoImpl implements ReportDao {
 
 	@Override
 	public List<Trains> getTrains1(String day, String source,String destination) {
-
-		   return temp.query(Quries.GET_TRAINS1,new Object[] {source,destination,day},new RowMapper<Trains>(){  
+		String sql="select * from train where train.source='"+source+"' and train.destination='"+destination+"' and train.trainno in(select TRAVELDAYS.trainno from TRAVELDAYS where "+day+"= 'Y')";
+	   return temp.query(sql,new RowMapper<Trains>(){  
 		        public Trains mapRow(ResultSet rs, int row) throws SQLException {  
-		        	System.out.println("fghfuigyh..........................");
-		        	Trains e=new Trains();  
-		        	System.out.println(rs.getString(1));
+		        	
+		        	Trains e=new Trains();  		        	
 		            e.setTrainno(rs.getString(1));  
 		            e.setTrainname(rs.getString(2)); 
 		            e.setSource(rs.getString(4));
 		            e.setDestination(rs.getString(5));
 		            e.setArrival(rs.getString(6));
-		            e.setDeparture(rs.getString(7));
-		            
-
+		            e.setDeparture(rs.getString(7));		           
 		            return e;  
 		        }  
 		    });
+	
 	}
 
 	@Override
@@ -62,8 +60,6 @@ public class ReportDaoImpl implements ReportDao {
 		return temp.query(Quries.GET_REG_PASS,new Object[] {trno},new RowMapper<Passenger>(){  
 	        public Passenger mapRow(ResultSet rs, int row) throws SQLException {  
 	        	Passenger e=new Passenger();  
-
-
 	            e.setName(rs.getString(1));
 	            e.setAge(rs.getString(2)); 
 	            e.setGender(rs.getString(3));
@@ -90,5 +86,23 @@ public class ReportDaoImpl implements ReportDao {
 	            
 	        }  
 	    });
+	}
+
+	@Override
+	public List<Trains> getTrains2(String day1, String day2, String source, String destination) {
+		String sql="select * from train where train.source='"+source+"' and train.destination='"+destination+"' and train.trainno in(select TRAVELDAYS.trainno from TRAVELDAYS where "+day1+"= 'Y'and +"+day2+"='Y')";
+		   return temp.query(sql,new RowMapper<Trains>(){  
+			        public Trains mapRow(ResultSet rs, int row) throws SQLException {  
+			        	
+			        	Trains e=new Trains();  		        	
+			            e.setTrainno(rs.getString(1));  
+			            e.setTrainname(rs.getString(2)); 
+			            e.setSource(rs.getString(4));
+			            e.setDestination(rs.getString(5));
+			            e.setArrival(rs.getString(6));
+			            e.setDeparture(rs.getString(7));		           
+			            return e;  
+			        }  
+			    });
 	}
 }

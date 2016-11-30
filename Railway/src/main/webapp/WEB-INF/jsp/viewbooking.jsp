@@ -34,7 +34,7 @@ tr:hover {background-color: #f5f5f5}
   <div class="row">
   <div class="panel panel-default"> 
 <table >  
-<tr><th class="col-xs-1">Train Number</th><th class="col-xs-1">Name</th><th class="col-xs-1">Age</th><th class="col-xs-1">Gender</th><th class="col-xs-1">Berth</th><th class="col-xs-1">Cancle</th></tr>  
+<tr><th class="col-xs-1">Train Number</th><th class="col-xs-1">Name</th><th class="col-xs-1">Age</th><th class="col-xs-1">Gender</th><th class="col-xs-1">Berth</th><th class="col-xs-1">Date</th><th class="col-xs-1">Cancle</th></tr>  
 
    <c:forEach var="pass" items="${pass}">   
    <tr>  
@@ -43,6 +43,7 @@ tr:hover {background-color: #f5f5f5}
    <td class="col-xs-1">${pass.age}</td>  
    <td class="col-xs-1">${pass.gender}</td>
    <td class="col-xs-1">${pass.berth}</td>
+      <td class="col-xs-1">${pass.travelDate}</td>
    <td><a href="cancel/${pass.name}">Cancel Reservation</a></td>
    </tr>  
    </c:forEach>  

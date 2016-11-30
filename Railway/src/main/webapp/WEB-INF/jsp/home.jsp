@@ -27,25 +27,22 @@ if(session.getAttribute("userid")==null){
 
 </head>
 <body>
-
 <nav>
  <div align="center">
 <div >
 			<ul class="dropdownMenu">
 				<li><a href="/MyShopping/home">Home</a></li>
 				<li><a href="/MyShopping/viewtrains">View Trains</a></li>                   
-     
-				<li><a href="#">My Account</a>
+     			<li><a href="/MyShopping/viewbooking">Reservations</a></li>
+				<li><a href="#">History</a>
 					<ul class="droprightMenu">
-						<li><a href="/MyShopping/viewbooking">Reservation</a></li>
-						<li><a href="/MyShopping/viewcancelation">Cancellation </a></li>						
+						<li><a href="/MyShopping/viewresHist">Reservation History </a></li>		
+						<li><a href="/MyShopping/viewcancelation">Cancellation History</a></li>						
 					</ul></li>
 					<li><a href="/MyShopping/logout">Logout</a></li>
-				
 			</ul>
 			</div>
 			</div>
 		</nav>
-
 </body>
 </html>

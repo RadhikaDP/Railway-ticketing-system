@@ -11,11 +11,17 @@
 <title>Insert title here</title>
 <link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/style.css" />
 <link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/bootstrap.min.css" />
-<link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/font-awesome.css" />
+
 <link rel="stylesheet" href="<%=request.getContextPath() %>/resources/css/dropdownmenue.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 <style type="text/css">
 th, td {
     padding: 15px;
@@ -30,13 +36,13 @@ tr:hover {background-color: #f5f5f5}
 <body>
    <div align="center">
  <div class="container">
-
   <div class="panel panel-default"> 
 
 <form:form action="viewtrains" method="post" modelAttribute="trains"  >
 <table >  
-     <tr>                                    
-        <td>  Source
+     <tr>     
+        <td>  
+        Source
           <form:select path="source" name="source" id="source" items="${source}"  >        
           </form:select></td>
           </tr>
@@ -45,6 +51,10 @@ tr:hover {background-color: #f5f5f5}
           <form:select path="destination" name="destination" id="destination" items="${destination}"  >
           
           </form:select></td>
+          
+          <td>     
+      Date: <form:input type="date" id="datepicker" path="date" />                    
+       </td>
           </tr>
                    <tr>     
           <td><input type="submit" value="Find trains" /></td>    

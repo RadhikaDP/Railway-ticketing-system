@@ -23,10 +23,17 @@ public class TrainsServiceImpl implements TrainsService{
 		return trainsdao.getallsource();
 	}
 
+
 	@Override
-	public List<Trains> retriveTrains(String source,String destination) {
-	
-		return trainsdao.retriveTrains(source,destination);
+	public List<String> gettrainno(String week) {
+		
+		return trainsdao.gettrainno(week);
 	}
 
+	@Override
+	public List<Trains> retriveTrains(String source, String destination,String week) {
+
+		return trainsdao.retriveTrains(source,destination,week);
+
+	}
 }
